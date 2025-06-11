@@ -1,4 +1,4 @@
-# mpesa-python-sdk - M-Pesa SDK for Python
+# [mpesa-python-sdk] M-Pesa SDK for Python
 
 [![PyPI version](https://img.shields.io/pypi/v/mpesa-python-sdk.svg)](https://pypi.org/project/mpesa-python-sdk) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://mit-license.org/Safaricom-Ethiopia-PLC)
 
