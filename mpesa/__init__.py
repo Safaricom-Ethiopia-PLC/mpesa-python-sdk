@@ -41,8 +41,8 @@ Installation
 To install the SDK, clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/amlaksil/mpesa-sdk.git
-cd mpesa-sdk
+git clone https://github.com/Safaricom-Ethiopia-PLC/mpesa-python-sdk.git
+cd mpesa-python-sdk
 pip install -r requirements.txt
 ```
 
@@ -107,7 +107,7 @@ This SDK is licensed under the MIT License. See the LICENSE file for details.
 Support
 -------
 For questions, issues, or contributions, visit my GitHub repository at:
-https://github.com/amlaksil/mpesa-sdk
+https://github.com/Safaricom-Ethiopia-PLC/mpesa-python-sdk
 """
 
 __version__ = "1.0.0"

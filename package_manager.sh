@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the package version
-PACKAGE_NAME="mpesa_client"
+PACKAGE_NAME="mpesa-python-sdk"
 PACKAGE_VERSION="1.0.0"
 
 build_package() {

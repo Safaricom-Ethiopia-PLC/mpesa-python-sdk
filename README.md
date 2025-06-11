@@ -1,4 +1,6 @@
-# M-Pesa Python SDK
+# mpesa-python-sdk - M-Pesa SDK for Python
+
+[![PyPI version](https://img.shields.io/pypi/v/mpesa-python-sdk.svg)](https://pypi.org/project/mpesa-python-sdk) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://mit-license.org/Safaricom-Ethiopia-PLC)
 
 ## Overview
 
@@ -14,6 +16,7 @@ The M-Pesa Python SDK simplifies the integration of your Python applications wit
 - **Logging**: Built-in logging for debugging and monitoring.
 
 ## Requirements
+
 - Python 3.7 or higher
 - An M-Pesa API developer account
 - Consumer Key and Consumer Secret from the M-Pesa API portal
@@ -24,7 +27,7 @@ The M-Pesa Python SDK simplifies the integration of your Python applications wit
 Install the SDK using pip:
 
 ```bash
-pip install mpesa_client
+pip install mpesa-python-sdk
 ```
 
 ## Configuration Guide
@@ -73,7 +76,7 @@ print("Client Key:", Config.CLIENT_KEY)
 
 If you don’t want to use environment variables or need to change settings dynamically, you can override the configuration directly in your application.
 
-#### Example:
+#### Example
 
 ```python
 # Override configuration
@@ -89,7 +92,7 @@ print("Base URL:", Config.BASE_URL)
 
 If M-Pesa updates its endpoints or you need to switch between environments (sandbox/production), you can easily update the relevant endpoints:
 
-#### Example:
+#### Example
 
 ```python
 # Set custom endpoint
@@ -200,81 +203,41 @@ response = b2c.make_payment(payload)
 print(response)
 ```
 
-## Logging Guide
-
-The SDK includes a flexible logging system to capture debug and runtime information. 
-
-### Default Behavior
-
-- Logs are saved to the directory specified by `MPESA_LOG_DIR` (e.g., `./logs`).
-- Logs are displayed in the terminal (unless `ENVIRONMENT` is set to `TEST`).
-
-### Customizing Logging
-
-1. **Environment Variables**
-
-Control logging behavior via your `.env` file:
-
-```dotenv
-MPESA_LOG_DIR=./custom_logs
-LOG_LEVEL=INFO
-ENVIRONMENT=TEST  # Disable console logs
-```
-
-2. **Disable Console Logs Programmatically**
-
-You can also set the environment programmatically to `TEST`:
-
-```python
-from mpesa import Config
-
-Config.ENVIRONMENT = "TEST"  # Disables console logging
-```
-
-3. **Using the Logger**
-
-Set up and use a logger in your application:
-
-```python
-from mpesa import get_logger
-
-# Initialize logger
-logger = get_logger(__name__)
-
-# Log messages
-logger.info("Starting the M-Pesa payment process.")
-logger.debug("Debugging transaction payload.")
-```
-
-## Error Handling
-
-The SDK includes custom exceptions for better debugging:
-
-- **ValidationError**: Raised for invalid payloads.
-- **APIError**: Raised for API-level errors.
-
-Example:
-
-```python
-from mpesa import APIError, ValidationError
-
-try:
-    response = stk_push.send_stk_push(payload)
-except ValidationError as e:
-    print("Payload validation failed:", e)
-except APIError as e:
-    print("API error occurred:", e)
-except Exception as e:
-    print("An unexpected error occurred:", e)
-```
-
 ## Contributing
 
-Contributions are welcome! If you’d like to improve the SDK, feel free to fork the repository and submit a pull request.
+Contributions are welcome! Please follow these steps:
+
+1. **Fork the repository** on GitHub.
+2. **Clone your fork** to your local machine.
+
+   ```bash
+   git clone https://github.com/Safaricom-Ethiopia-PLC/mpesa-python-sdk.git
+   ```
+
+3. **Create a new feature branch**.
+
+   ```bash
+   git checkout -b feature/<your-feature-name>
+   ```
+
+4. **Make your changes** and commit them.
+
+   ```bash
+   git commit -am "Add new <short feature description>"
+   ```
+
+5. **Push your branch** to your fork.
+
+   ```bash
+   git push origin feature/<your-feature-name>
+   ```
+
+6. **Open a pull request** from your branch to the main repository.
 
 ## License
 
-This project is licensed under the [MIT License](https://mit-license.org/amlaksil). See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the [MIT License](https://mit-license.org/Safaricom-Ethiopia-PLC). See the [LICENSE](LICENSE) file for more details.
 
 ---
-*Happy coding with M-Pesa Python SDK!*
+
+_Happy coding with M-Pesa Python SDK!_

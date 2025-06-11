@@ -4,16 +4,16 @@ with open('README.md', 'r', encoding='utf-8') as fh:
     long_description = fh.read()
 
 setup(
-    name="mpesa_client",
+    name="mpesa-python-sdk",
     version="1.0.0",
-    author="Silamlak Desye",
-    author_email="lamlak.lamlak19@gmail.com",
+    author="Zelalem Gizachew",
+    author_email="zelalem.gizachew@safaricom.et",
     description="A Python SDK for seamless integration with the M-Pesa API, supporting STK Push payments, C2B, B2C payouts, and more.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/amlaksil/mpesa-sdk",
+    url="https://github.com/Safaricom-Ethiopia-PLC/mpesa-python-sdk",
     packages=find_packages(),
-    keywords="mpesa sdk M‑PESA API Safaricom integration python payments library mobile money STK Push C2B B2C financial transactions developer tools",
+    keywords="mpesa-python-sdk M-PESA API Safaricom integration python payments library mobile money STK Push C2B B2C financial transactions developer tools",
     install_requires=[
         "pydantic>=2.10.0,<3.0.0",
         "requests>=2.31.0,<3.0.0",

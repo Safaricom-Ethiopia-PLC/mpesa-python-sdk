@@ -3,10 +3,10 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mpesa_client"
+name = "mpesa-python-sdk"
 version = "1.0.0"
 description="A Python SDK for seamless integration with the M-Pesa API, supporting STK Push payments, C2B, B2C payouts, and more."
-authors = [{name = "Silamlak Desye", email = "lamlak.lamlak19@gmail.com"}]
+authors = [{name = "Zelalem Gizachew", email = "zelalem.gizachew@safaricom.et"}]
 license = {file = "LICENSE"}
 readme = "README.md"
 requires-python = ">=3.7"
@@ -21,5 +21,5 @@ dependencies = [
 dynamic = ["classifiers", "optional-dependencies"]
 
 [project.urls]
-Homepage = "https://github.com/amlaksil/mpesa-sdk"
-Repository = "https://github.com/amlaksil/mpesa-sdk"
+Homepage = "https://github.com/Safaricom-Ethiopia-PLC/mpesa-python-sdk"
+Repository = "https://github.com/Safaricom-Ethiopia-PLC/mpesa-python-sdk"
